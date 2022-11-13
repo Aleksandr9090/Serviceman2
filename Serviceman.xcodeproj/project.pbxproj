@@ -15,6 +15,10 @@
 		1F782E0C291F946900A4C104 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F782E0B291F946900A4C104 /* OrdersViewController.swift */; };
 		1F782E0E291F950C00A4C104 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F782E0D291F950C00A4C104 /* OrderViewController.swift */; };
 		1F782E10291F952B00A4C104 /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F782E0F291F952B00A4C104 /* AddOrderViewController.swift */; };
+		1F782E12291F9B6900A4C104 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F782E11291F9B6900A4C104 /* Order.swift */; };
+		1F782E14291FA85C00A4C104 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F782E13291FA85C00A4C104 /* StorageManager.swift */; };
+		1F782E162921558200A4C104 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F782E152921558100A4C104 /* DataManager.swift */; };
+		1F782E182921745800A4C104 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F782E172921745800A4C104 /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		1F782E0B291F946900A4C104 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		1F782E0D291F950C00A4C104 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		1F782E0F291F952B00A4C104 /* AddOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewController.swift; sourceTree = "<group>"; };
+		1F782E11291F9B6900A4C104 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		1F782E13291FA85C00A4C104 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		1F782E152921558100A4C104 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		1F782E172921745800A4C104 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,10 @@
 				1F782E0B291F946900A4C104 /* OrdersViewController.swift */,
 				1F782E0D291F950C00A4C104 /* OrderViewController.swift */,
 				1F782E0F291F952B00A4C104 /* AddOrderViewController.swift */,
+				1F782E11291F9B6900A4C104 /* Order.swift */,
+				1F782E13291FA85C00A4C104 /* StorageManager.swift */,
+				1F782E152921558100A4C104 /* DataManager.swift */,
+				1F782E172921745800A4C104 /* TabBarViewController.swift */,
 			);
 			path = Serviceman;
 			sourceTree = "<group>";
@@ -144,8 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F782E12291F9B6900A4C104 /* Order.swift in Sources */,
+				1F782E162921558200A4C104 /* DataManager.swift in Sources */,
 				1F782DF8291F8DCC00A4C104 /* AppDelegate.swift in Sources */,
 				1F782E0C291F946900A4C104 /* OrdersViewController.swift in Sources */,
+				1F782E182921745800A4C104 /* TabBarViewController.swift in Sources */,
+				1F782E14291FA85C00A4C104 /* StorageManager.swift in Sources */,
 				1F782E10291F952B00A4C104 /* AddOrderViewController.swift in Sources */,
 				1F782DFA291F8DCC00A4C104 /* SceneDelegate.swift in Sources */,
 				1F782E0E291F950C00A4C104 /* OrderViewController.swift in Sources */,

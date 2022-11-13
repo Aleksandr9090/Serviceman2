@@ -8,6 +8,8 @@
 import UIKit
 
 class OrderViewController: UIViewController {
+    
+    var order: Order!
 
     override func viewDidLoad() {
         super.viewDidLoad()

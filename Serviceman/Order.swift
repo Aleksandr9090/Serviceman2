@@ -8,6 +8,7 @@
 import Foundation
 
 class Order {
+    
     var phone = ""
     var address = ""
     var task = "Вскрытие и замена замка"
@@ -20,20 +21,19 @@ class Order {
     var percentOwner = 0.5
     var isDone = false
 
-
     var profit: Int {
         Int(Double(cost - stuffCost) * (1 - percentOwner))
     }
     
-    init(phone: String, address: String, stuff: String, stuffCost: Int, cost: Int, owner: String) {
+    init(phone: String, address: String,task: String, stuff: String, stuffCost: Int, cost: Int, owner: String) {
         self.phone = phone
         self.address = address
+        self.task = task
         self.stuff = stuff
         self.stuffCost = stuffCost
         self.cost = cost
         self.owner = owner
     }
-
 
     static func getOrders() -> [Order] {
         var orders: [Order] = []
@@ -49,6 +49,7 @@ class Order {
             let order = Order(
                 phone: phones[index],
                 address: addresses[index],
+                task: "Вскрытие и замена замка",
                 stuff: stuffs[index],
                 stuffCost: stuffsCosts[index],
                 cost: costs[index],
@@ -60,6 +61,14 @@ class Order {
 
         return orders
     }
+    
+//    static func getOrdersMap(orders: [Order]) -> [Int : Order] {
+//        var ordersMap: [Int: Order] = [:]
+//        for index in 0...orders.count {
+//            ordersMap[index] = orders[index]
+//        }
+//        return ordersMap
+//    }
     
 }
 

@@ -12,7 +12,7 @@ class OrdersViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        orders = Order.getOrders()
+        orders = StorageManager.shared.orders
 
     }
 
@@ -38,7 +38,7 @@ class OrdersViewController: UITableViewController {
         let order = orders[indexPath.row]
         
         let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { _, _, _ in
-            StorageManager.shared.delete(order)
+            StorageManager.shared.delete(indexPath.row)
             tableView.reloadRows(at: [indexPath], with: .automatic)
             
         }
@@ -55,8 +55,6 @@ class OrdersViewController: UITableViewController {
         return UISwipeActionsConfiguration(actions: [doneAction, deleteAction])
     }
     
-    
-    
 
     // MARK: - Navigation
 
@@ -70,6 +68,28 @@ class OrdersViewController: UITableViewController {
 
 
     @IBAction func AddButtonPressed(_ sender: UIBarButtonItem) {
+        showAlert()
     }
     
+}
+
+extension OrdersViewController {
+    private func showAlert(completion: (() -> Void)? = nil) {
+
+        let alert = UIAlertController.createAlert(withTitle: "Add new order", andMessage: "Enter data in the fields")
+
+        alert.action { order in
+            self.saveOrder(order)
+        }
+
+        present(alert, animated: true)
+    }
+    
+    private func saveOrder(_ order: Order) {
+        let order = order
+        StorageManager.shared.save(order)
+        let rowIndex = IndexPath(row: orders.count - 1, section: 0)
+        tableView.insertRows(at: [rowIndex], with: .automatic)
+        tableView.reloadData()
+    }
 }

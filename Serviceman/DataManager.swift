@@ -56,8 +56,4 @@ class DataManager {
         "Артем", "Артем", "Артем", "Артем", "Артем"
     ].shuffled()
     
-//    let dates = [
-//        
-//    ]
-    
 }

@@ -175,6 +175,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Orders" id="evc-vI-e31"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9Zc-dp-h28">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -192,7 +193,7 @@
         <!--Finance-->
         <scene sceneID="9Kk-a9-oSO">
             <objects>
-                <viewController id="raw-MG-lnF" sceneMemberID="viewController">
+                <viewController id="raw-MG-lnF" customClass="FinanceViewController" customModule="Serviceman" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FtV-bs-hdW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -208,7 +209,7 @@
         <!--Chats-->
         <scene sceneID="qTv-3n-iI9">
             <objects>
-                <viewController id="usM-3O-fxr" sceneMemberID="viewController">
+                <viewController id="usM-3O-fxr" customClass="FinanceViewController" customModule="Serviceman" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ke1-Rj-nx6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

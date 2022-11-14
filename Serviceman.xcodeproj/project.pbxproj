@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F76A1152922925E0052CB55 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1F76A1142922925E0052CB55 /* SnapKit */; };
+		1F76A1192922A25A0052CB55 /* FinanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F76A1182922A25A0052CB55 /* FinanceViewController.swift */; };
 		1F782DF8291F8DCC00A4C104 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F782DF7291F8DCC00A4C104 /* AppDelegate.swift */; };
 		1F782DFA291F8DCC00A4C104 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F782DF9291F8DCC00A4C104 /* SceneDelegate.swift */; };
 		1F782DFF291F8DCC00A4C104 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F782DFD291F8DCC00A4C104 /* Main.storyboard */; };
@@ -14,7 +16,6 @@
 		1F782E04291F8DCE00A4C104 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F782E02291F8DCE00A4C104 /* LaunchScreen.storyboard */; };
 		1F782E0C291F946900A4C104 /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F782E0B291F946900A4C104 /* OrdersViewController.swift */; };
 		1F782E0E291F950C00A4C104 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F782E0D291F950C00A4C104 /* OrderViewController.swift */; };
-		1F782E10291F952B00A4C104 /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F782E0F291F952B00A4C104 /* AddOrderViewController.swift */; };
 		1F782E12291F9B6900A4C104 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F782E11291F9B6900A4C104 /* Order.swift */; };
 		1F782E14291FA85C00A4C104 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F782E13291FA85C00A4C104 /* StorageManager.swift */; };
 		1F782E162921558200A4C104 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F782E152921558100A4C104 /* DataManager.swift */; };
@@ -22,7 +23,21 @@
 		1F782E1A2922351900A4C104 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F782E192922351900A4C104 /* AlertController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1F7709E02922A7ED00FA491B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1F76A1182922A25A0052CB55 /* FinanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceViewController.swift; sourceTree = "<group>"; };
 		1F782DF4291F8DCC00A4C104 /* Serviceman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Serviceman.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F782DF7291F8DCC00A4C104 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F782DF9291F8DCC00A4C104 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,7 +47,6 @@
 		1F782E05291F8DCE00A4C104 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F782E0B291F946900A4C104 /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		1F782E0D291F950C00A4C104 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
-		1F782E0F291F952B00A4C104 /* AddOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewController.swift; sourceTree = "<group>"; };
 		1F782E11291F9B6900A4C104 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		1F782E13291FA85C00A4C104 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		1F782E152921558100A4C104 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -45,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F76A1152922925E0052CB55 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,12 +93,12 @@
 				1F782E05291F8DCE00A4C104 /* Info.plist */,
 				1F782E0B291F946900A4C104 /* OrdersViewController.swift */,
 				1F782E0D291F950C00A4C104 /* OrderViewController.swift */,
-				1F782E0F291F952B00A4C104 /* AddOrderViewController.swift */,
 				1F782E11291F9B6900A4C104 /* Order.swift */,
 				1F782E13291FA85C00A4C104 /* StorageManager.swift */,
 				1F782E152921558100A4C104 /* DataManager.swift */,
 				1F782E172921745800A4C104 /* TabBarViewController.swift */,
 				1F782E192922351900A4C104 /* AlertController.swift */,
+				1F76A1182922A25A0052CB55 /* FinanceViewController.swift */,
 			);
 			path = Serviceman;
 			sourceTree = "<group>";
@@ -98,12 +113,16 @@
 				1F782DF0291F8DCC00A4C104 /* Sources */,
 				1F782DF1291F8DCC00A4C104 /* Frameworks */,
 				1F782DF2291F8DCC00A4C104 /* Resources */,
+				1F7709E02922A7ED00FA491B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Serviceman;
+			packageProductDependencies = (
+				1F76A1142922925E0052CB55 /* SnapKit */,
+			);
 			productName = Serviceman;
 			productReference = 1F782DF4291F8DCC00A4C104 /* Serviceman.app */;
 			productType = "com.apple.product-type.application";
@@ -132,6 +151,9 @@
 				Base,
 			);
 			mainGroup = 1F782DEB291F8DCC00A4C104;
+			packageReferences = (
+				1F76A1132922925E0052CB55 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 1F782DF5291F8DCC00A4C104 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -160,13 +182,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F782E12291F9B6900A4C104 /* Order.swift in Sources */,
+				1F76A1192922A25A0052CB55 /* FinanceViewController.swift in Sources */,
 				1F782E162921558200A4C104 /* DataManager.swift in Sources */,
 				1F782DF8291F8DCC00A4C104 /* AppDelegate.swift in Sources */,
 				1F782E0C291F946900A4C104 /* OrdersViewController.swift in Sources */,
 				1F782E182921745800A4C104 /* TabBarViewController.swift in Sources */,
 				1F782E14291FA85C00A4C104 /* StorageManager.swift in Sources */,
 				1F782E1A2922351900A4C104 /* AlertController.swift in Sources */,
-				1F782E10291F952B00A4C104 /* AddOrderViewController.swift in Sources */,
 				1F782DFA291F8DCC00A4C104 /* SceneDelegate.swift in Sources */,
 				1F782E0E291F950C00A4C104 /* OrderViewController.swift in Sources */,
 			);
@@ -390,6 +412,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1F76A1132922925E0052CB55 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F76A1142922925E0052CB55 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F76A1132922925E0052CB55 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1F782DEC291F8DCC00A4C104 /* Project object */;
 }

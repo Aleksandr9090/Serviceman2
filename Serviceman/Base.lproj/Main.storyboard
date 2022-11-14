@@ -152,6 +152,17 @@
                     <navigationItem key="navigationItem" id="CFf-8D-lHG">
                         <barButtonItem key="rightBarButtonItem" title="Save" id="Xgr-IV-ZoI"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addressTextField" destination="V9H-7d-xxM" id="3FA-sF-lRb"/>
+                        <outlet property="commentTextField" destination="VHJ-ar-1Gg" id="czM-ei-b9v"/>
+                        <outlet property="costTextField" destination="F7A-hD-fOR" id="Ufv-HD-u14"/>
+                        <outlet property="ownerTextField" destination="bir-VD-BGw" id="mp7-GT-mNY"/>
+                        <outlet property="percentOwnerTextField" destination="kHh-uE-rZ8" id="0CG-iY-0ik"/>
+                        <outlet property="phoneTextField" destination="NCu-fY-9pI" id="bjB-ia-Y8H"/>
+                        <outlet property="stuffCostTextField" destination="lVl-Ph-jBB" id="6TF-6K-vpl"/>
+                        <outlet property="stuffTextField" destination="E88-dh-xnT" id="Fmu-ey-8Kp"/>
+                        <outlet property="taskTextField" destination="mhY-6n-OYi" id="fJv-tI-GXW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KoW-Wa-VkZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

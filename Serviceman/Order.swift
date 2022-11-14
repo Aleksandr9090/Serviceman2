@@ -52,7 +52,8 @@ class Order {
                 stuff: stuffs[index],
                 stuffCost: stuffsCosts[index],
                 cost: costs[index],
-                owner: owners[index])
+                owner: owners[index]
+            )
 
             orders.append(order)
         }
